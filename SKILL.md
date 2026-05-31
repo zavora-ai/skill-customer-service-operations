@@ -1,41 +1,9 @@
 ---
 name: customer-service-operations
 description: Orchestrate customer service workflows — triage conversations, assess churn risk, resolve with KB-first approach, route intelligently, and track satisfaction. Use when handling support conversations, checking customer health, assessing churn risk, finding help articles, drafting responses, escalating issues, reviewing queue status, or analyzing service metrics.
-version: "1.0.0"
 license: Apache-2.0
 compatibility: Requires mcp-customer-service server connected. Optional: mcp-crm for customer context, mcp-email for outbound, mcp-slack for escalation alerts.
-allowed-tools:
-  - list_conversations
-  - get_conversation
-  - start_conversation
-  - reply_conversation
-  - add_internal_note
-  - get_customer_profile
-  - get_customer_health
-  - get_interaction_history
-  - assess_churn_risk
-  - search_knowledge_base
-  - suggest_response
-  - get_canned_responses
-  - resolve_conversation
-  - assign_agent
-  - escalate
-  - get_queue_status
-  - get_satisfaction_scores
-  - get_service_metrics
-  - list_agents
-  - merge_conversations
-tags:
-  - business
-  - customer-service
-  - support
-  - churn
-  - satisfaction
-  - conversations
-references:
-  - references/tool-sequences.md
-  - references/cross-mcp-workflows.md
-  - references/examples.md
+allowed-tools: [list_conversations, get_conversation, start_conversation, reply_conversation, add_internal_note, get_customer_profile, get_customer_health, get_interaction_history, assess_churn_risk, search_knowledge_base, suggest_response, get_canned_responses, resolve_conversation, assign_agent, escalate, get_queue_status, get_satisfaction_scores, get_service_metrics, list_agents, merge_conversations]
 metadata:
   author: Zavora AI
   mcp-server: mcp-customer-service
